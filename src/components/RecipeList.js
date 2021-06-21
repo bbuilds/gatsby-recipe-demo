@@ -8,7 +8,7 @@ function RecipeList({ recipes = [] }) {
       {recipes.map(recipe => {
         const slug = slugify(recipe.title, { lower: true })
         return (
-          <Link to={`${slug}`} key={recipe.id} className="recipe">
+          <Link to={`/${slug}`} key={recipe.id} className="recipe">
             <GatsbyImage
               image={recipe.image.gatsbyImageData}
               className="recipe-img"
