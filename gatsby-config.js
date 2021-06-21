@@ -65,6 +65,7 @@ module.exports = {
         },
       },
     },
+    `gatsby-plugin-react-helmet`,
   ],
   flags: {
     DEV_SSR: false,
